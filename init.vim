@@ -1,15 +1,26 @@
+"return to command mode"
 inoremap <silent> jj <ESC>
+
+"separate window"
 noremap tt :<C-u>vs<CR>
-noremap <silent> th <C-w>h "左に移動"
-noremap <silent> tj <C-w>j "下に移動"
-noremap <silent> tk <C-w>k "上に移動"
-noremap <silent> tl <C-w>l "右に移動"
-noremap <silent> == gg=G "インデント整列"
+
+"move left,down,up,right"
+noremap <silent> th <C-w>
+noremap <silent> tj <C-w>j
+noremap <silent> tk <C-w>k
+noremap <silent> tl <C-w>l
+
+"indent alignment"
+noremap <silent> == gg=G
 
 "color coding by syntax"
 syntax on
+
 "tab width adjusting"
 set tabstop=3
-"in"
+
+"incremental search"
 set incsearch
-set number "行番号を表示"
+
+"display line number"
+set number
