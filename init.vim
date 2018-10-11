@@ -13,12 +13,16 @@ if dein#load_state('$HOME/.cache/dein')
  " Required:
   call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
 
- " Add or remove your plugins here like this:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('jacoborus/tender.vim')
-  call dein#add('itchyny/lightline.vim')
-		call dein#add('itchyny/vim-gitbranch')
+ " set directory of dein.toml,dein_lazy.toml 
+	let s:toml_dir = expand('~/.config/nvim/toml')
+
+	" When start-up , plugins is read
+	call dein#load_toml(s:toml_dir .'/dein.toml',{'lazy':0})
+	" When dely , plugins is read
+ "	call dein#load_toml(s:toml_dir .'/dein_lazy.toml',{'lazt':1})
+
+" Add or remove your plugins here like this:
+	" look at ~/.config/nvim/toml/dein.toml
 
  " Required:
   call dein#end()
@@ -86,4 +90,4 @@ let g:lightline = {
 																								\'gitbranch': 'gitbranch#name'
 																								\},
 																								\}
-
+"End lightline settings---------------------
