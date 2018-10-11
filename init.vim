@@ -77,13 +77,13 @@ colorscheme tender
 
 "lightline settings-------------------------
 let g:lightline = {
-																	\'colorscheme': 'tender',
-																	\'active': {
+																								\'colorscheme': 'tender',
+																								\'active':{
 																								\'left': [ [ 'mode', 'paste' ],
-																																\[ 'readonly', 'filename', 'modefied', 'helloworld']]
+																								\[ 'readonly', 'filename','gitbranch', 'modefied']]
 																								\},
-																\'component':{
-																								\'helloworld': 'Hello, world!'
+																								\'component_function':{
+																								\'gitbranch': 'gitbranch#name'
 																								\},
-																\}
+																								\}
 
