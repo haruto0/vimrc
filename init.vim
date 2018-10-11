@@ -70,11 +70,6 @@ set number
 
 "End shortcut settings---------------------
 
-"colorscheme tender settings"
-if(has("termguicolors"))
-								set termguicolors
-endif
-
 "Theme
 syntax enable
 colorscheme tender
