@@ -18,6 +18,7 @@ if dein#load_state('$HOME/.cache/dein')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('jacoborus/tender.vim')
   call dein#add('itchyny/lightline.vim')
+		call dein#add('itchyny/vim-gitbranch')
 
  " Required:
   call dein#end()
@@ -76,13 +77,13 @@ colorscheme tender
 
 "lightline settings-------------------------
 let g:lightline = {
-																								\'colorscheme': 'tender',
-																								\'active': {
+																	\'colorscheme': 'tender',
+																	\'active': {
 																								\'left': [ [ 'mode', 'paste' ],
-																								\[ 'readonly', 'filename', 'modefied', 'helloworld']]
+																																\[ 'readonly', 'filename', 'modefied', 'helloworld']]
 																								\},
-																								\'component':{
+																\'component':{
 																								\'helloworld': 'Hello, world!'
 																								\},
-																								\}
+																\}
 
