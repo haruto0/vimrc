@@ -35,7 +35,7 @@ endif
 
 "End dein Scripts-------------------------
 
-"Start shortcut settings------------------
+"shortcut settings------------------
 "return to command mode"
 inoremap <silent> jj <ESC>
 
@@ -66,13 +66,12 @@ set number
 "End shortcut settings---------------------
 
 "colorscheme tender settings"
-if (has("termguicolors"))
+if(has("termguicolors"))
 								set termguicolors
 endif
-
-let g:lightline = { 'colorscheme': 'tender' }
-let g:airline_theme = 'tender'
 
 "Theme
 syntax enable
 colorscheme tender
+
+"let g:lightline = { 'colorscheme': 'tender' }
