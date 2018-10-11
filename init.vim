@@ -74,4 +74,15 @@ endif
 syntax enable
 colorscheme tender
 
-"let g:lightline = { 'colorscheme': 'tender' }
+"lightline settings-------------------------
+let g:lightline = {
+																								\'colorscheme': 'tender',
+																								\'active': {
+																								\'left': [ [ 'mode', 'paste' ],
+																								\[ 'readonly', 'filename', 'modefied', 'helloworld']]
+																								\},
+																								\'component':{
+																								\'helloworld': 'Hello, world!'
+																								\},
+																								\}
+
