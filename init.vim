@@ -68,15 +68,17 @@ set number
 set noshowmode
 
 "changing the cursor color in insert mode"
-hi Cursor guifg=black guibg=grenn gui=reverse
-set guicursor=a:block-blinkon100-Cursor/Cursor
+"set guicursor=a:block-blinkon100-Cursor/Cursor
 
 "Theme
 syntax on
 set t_Co=256
 set background=dark
 colorscheme molokai 
-let macvim_skip_colorschme=1
+
+highlight Cursor guifg=#FFFFFF guibg=#FFFFFF
+highlight iCursor guifg=#FFFFFF guibg=#FFFFFF
+highlight CursorLine guibg=#FFFFFF
 
 "lightline settings-------------------------
 let g:lightline = {
