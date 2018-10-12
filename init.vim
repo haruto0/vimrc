@@ -56,9 +56,6 @@ noremap <silent> == gg=G
 
 "End shortcut settings---------------
 
-"color coding by syntax"
-syntax on
-
 "tab width adjusting"
 set tabstop=1
 
@@ -70,8 +67,16 @@ set number
 
 set noshowmode
 
+"changing the cursor color in insert mode"
+hi Cursor guifg=black guibg=grenn gui=reverse
+set guicursor=a:block-blinkon100-Cursor/Cursor
+
 "Theme
+syntax on
+set t_Co=256
+set background=dark
 colorscheme tender
+let macvim_skip_colorschme=1
 
 "lightline settings-------------------------
 let g:lightline = {
@@ -97,4 +102,5 @@ endfunction
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline =  0
+
 "End lightline settings---------------------
