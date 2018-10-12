@@ -11,6 +11,9 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'jacoborus/tender.vim'
 
 [[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]

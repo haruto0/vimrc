@@ -75,7 +75,7 @@ set guicursor=a:block-blinkon100-Cursor/Cursor
 syntax on
 set t_Co=256
 set background=dark
-colorscheme tender
+colorscheme molokai 
 let macvim_skip_colorschme=1
 
 "lightline settings-------------------------
