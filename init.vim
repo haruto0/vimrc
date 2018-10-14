@@ -1,6 +1,6 @@
 "dein Scripts-----------------------------
 if &compatible
-								set nocompatible               " Be iMproved
+					set nocompatible               " Be iMproved
 endif
 
 " Required:
@@ -14,8 +14,8 @@ if dein#load_state('$HOME/.cache/dein')
 								" set directory of dein.toml,dein_lazy.toml 
 								let s:toml_dir = expand('~/.config/nvim/toml')
 
-								" When start-up , plugins is read
-								call dein#load_toml(s:toml_dir .'/dein.toml',{'lazy':0})
+		 					" When start-up , plugins is read
+							 call dein#load_toml(s:toml_dir .'/dein.toml',{'lazy':0})
 								" When dely , plugins is read
 								"	call dein#load_toml(s:toml_dir .'/dein_lazy.toml',{'lazt':1})
 
@@ -43,16 +43,16 @@ endif
 inoremap <silent> jj <ESC>
 
 "separate window"
-noremap tt :<C-u>vs<CR>
+noremap <silent> tt :<C-u>vs<CR>
 
 "move left,down,up,right"
-noremap <silent> th <C-w>
+noremap <silent> th <C-w>h
 noremap <silent> tj <C-w>j
 noremap <silent> tk <C-w>k
 noremap <silent> tl <C-w>l
 
 "indent alignment"
-noremap <silent> == gg=G
+noremap <silent> == gg
 
 "End shortcut settings---------------
 
@@ -85,7 +85,7 @@ let g:lightline = {
 																								\'colorscheme': 'powerline',
 																								\'active':{
 																								\'left': [ [ 'mode', 'paste' ],
-																								\[ 'readonly', 'filename','gitbranch', 'modefied']]
+																								\[ 'readonly', 'gitbranch','filename', 'modefied']]
 																								\},
 																								\'component_function':{
 																								\'gitbranch': 'gitbranch#name',
@@ -95,11 +95,7 @@ let g:lightline = {
 
 
 function! LightlineFilename()
-	return expand('%:p') !=# '' ? expand('%:p')  : '[No Name]'
+								return expand('%:p') !=# '' ? expand('%:p')  : '[No Name]'
 endfunction
-
-let g:unite_force_overwrite_statusline = 0
-let g:vimfiler_force_overwrite_statusline = 0
-let g:vimshell_force_overwrite_statusline =  0
 
 "End lightline settings---------------------
