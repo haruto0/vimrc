@@ -17,10 +17,11 @@ if dein#load_state('$HOME/.cache/dein')
 		 					" When start-up , plugins is read
 							 call dein#load_toml(s:toml_dir .'/dein.toml',{'lazy':0})
 								" When dely , plugins is read
-								"	call dein#load_toml(s:toml_dir .'/dein_lazy.toml',{'lazt':1})
+								call dein#load_toml(s:toml_dir .'/dein_lazy.toml',{'lazy':1})
 
 								" Add or remove your plugins here like this:
 								" look at ~/.config/nvim/toml/dein.toml
+
 
 								" Required:
 								call dein#end()
@@ -99,3 +100,9 @@ function! LightlineFilename()
 endfunction
 
 "End lightline settings---------------------
+"
+"python2,3 threw path settings--------------
+let g:python_host_prog = expand('~/.pyenv/shims/python2')
+let g:python3_host_prog = expand('~/.pyenv/shims/python3')
+"End python2,3 threw path settings----------
+

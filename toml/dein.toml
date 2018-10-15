@@ -27,6 +27,3 @@ repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'Shougo/vimshell.vim'
-
-[[plugins]]
-repo = "davidhalter/jedi-vim"
